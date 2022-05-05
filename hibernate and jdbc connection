@@ -11,6 +11,9 @@ spring.datasource.tomcat.min-idle=15
 #print log files
 logging.file=/var/tmp/mylog.log
 
+#To active actuator
+management.endpoints.web.exposure.include=*
+
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5Dialect
 spring.jpa.properties.hibernate.id.new_generator_mappings = false
