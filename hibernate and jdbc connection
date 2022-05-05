@@ -8,6 +8,9 @@ spring.datasource.tomcat.max-active=50
 spring.datasource.tomcat.max-idle=20
 spring.datasource.tomcat.min-idle=15
 
+#print log files
+logging.file=/var/tmp/mylog.log
+
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5Dialect
 spring.jpa.properties.hibernate.id.new_generator_mappings = false
