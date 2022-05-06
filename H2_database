@@ -1,4 +1,5 @@
 spring.datasource.url=jdbc:h2:mem:testdb
+#spring.datasource.url=jdbc:h2:file:D:/h2db/ecart # TO persist data in database.
 spring.datasource.driverClassName=org.h2.Driver
 spring.datasource.username=sa
 spring.datasource.password=password
@@ -9,3 +10,12 @@ spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
 check url,username,password
 
 then connect
+
+2) If you want to persist data in database then remove inmemory url
+and add spring.datasource.url=jdbc:h2:file:D:/h2db/ecart
+
+after that src/main/resource folder create two file
+1) schema.sql
+create table and recored of the table
+2) data.sql
+write query
