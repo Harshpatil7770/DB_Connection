@@ -16,6 +16,12 @@ and add spring.datasource.url=jdbc:h2:file:D:/h2db/ecart
 
 after that src/main/resource folder create two file
 1) schema.sql
+
+DROP TABLE IF EXISTS EMPLOYEE_TABLE;
+
+CREATE TABLE EMPLOYEE_TABLE(id INT AUTO_INCREMENT PRIMARY KEY, first_name VARCHAR(100) NOT NULL,last_name VARCHAR(100) NOT NULL,
+age INT);
+
 create table and recored of the table
 2) data.sql
 write query
